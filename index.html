@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>PaintBoard JS</title>
 </head>
 <body>
-    
+    <canvas id="jscnvs" class="cnvs"></canvas>
+    <div class="ctrl">
+        <div class="ctrl-range">
+            <input type="range" id="jsrange" min="0.1" max="5.0" value="2.5" step="0.1"/>
+        </div>
+        <div class="ctrl-btn">
+            <button id="jsfill">Fill</button>
+            <button id="jssave">Save</button>
+        </div>
+        <div id="jscolors" class="ctrl-colors">
+            <div class="ctrl-color" style="background-color: rgb(0, 0, 0);"></div>
+            <div class="ctrl-color" style="background-color: rgb(255, 255, 255);"></div>
+            <div class="ctrl-color" style="background-color: rgb(255, 0, 0);"></div>
+            <div class="ctrl-color" style="background-color: rgb(255, 166, 0);"></div>
+            <div class="ctrl-color" style="background-color: rgb(255, 251, 0);"></div>
+            <div class="ctrl-color" style="background-color: rgb(0, 151, 0);"></div>
+            <div class="ctrl-color" style="background-color: rgb(135, 206, 235);"></div>
+            <div class="ctrl-color" style="background-color: rgb(0, 0, 255);"></div>
+            <div class="ctrl-color" style="background-color: rgb(98, 0, 255);"></div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
