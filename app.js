@@ -78,8 +78,10 @@ function clickMouseR(event) {
 }
 if (cnvs) {
     cnvs.addEventListener("mousedown",startPainting);
+    cnvs.addEventListener("touchstart",startPainting);
     cnvs.addEventListener("mouseup",stopPainting);
-    cnvs.addEventListener("mousemove",onMouseMove);
+    cnvs.addEventListener("touchend",stopPainting);
+    cnvs.addEventListener("touchmove",onMouseMove);
     cnvs.addEventListener("mouseenter", onMouseEnter);
     cnvs.addEventListener("click", clickCnvs);
     cnvs.addEventListener("contextmenu", clickMouseR);//마우스 우클릭 통제
